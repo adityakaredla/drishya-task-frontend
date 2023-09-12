@@ -1,0 +1,92 @@
+/* TreeView.css */
+
+
+.node__root > circle {
+    fill: rgb(33, 69, 188);
+  }
+  
+  .node__branch > circle {
+    fill: rgb(26, 166, 227);
+  }
+  
+  .node__leaf > circle {
+    fill: rgb(0, 204, 255);
+  }
+
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+  }
+  
+  /* Tree Container */
+  .TreeView {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Tree Heading */
+  .TreeView h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Tree View */
+  .rct-node {
+    background-color: #f4f4f4;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .rct-node:hover {
+    background-color: #eaeaea;
+  }
+  
+  /* Refresh Button */
+  .TreeView button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .TreeView button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .TreeView {
+      padding: 15px;
+    }
+  
+    .TreeView h2 {
+      font-size: 1.5rem;
+    }
+  
+    .rct-node {
+      padding: 10px;
+    }
+  
+    .TreeView button {
+      padding: 10px 20px;
+    }
+  }
+  
